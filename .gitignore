@@ -1,0 +1,113 @@
+# ==========================================
+# CREDENCIAIS E INFORMAÇÕES PRIVADAS
+# ==========================================
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Credenciais privadas do Firebase
+serviceAccountKey.json
+*-firebase-adminsdk-*.json
+*adminsdk*.json
+*service-account*.json
+*serviceAccount*.json
+
+# Chaves e certificados privados
+*.pem
+*.key
+*.p12
+*.pfx
+
+
+# ==========================================
+# FIREBASE
+# ==========================================
+
+# Arquivos locais gerados pelo Firebase CLI
+.firebase/
+
+
+# ==========================================
+# LOGS
+# ==========================================
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+firebase-debug.log*
+firebase-debug.*.log*
+
+
+# ==========================================
+# DADOS DE EXECUÇÃO
+# ==========================================
+
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+
+# ==========================================
+# DEPENDÊNCIAS
+# ==========================================
+
+node_modules/
+
+# Cache do npm
+.npm/
+
+# Cache do ESLint
+.eslintcache
+
+# Histórico do Node REPL
+.node_repl_history
+
+
+# ==========================================
+# ARQUIVOS GERADOS
+# ==========================================
+
+# Arquivos gerados pelo npm pack
+*.tgz
+
+# Arquivo de integridade do Yarn
+.yarn-integrity
+
+# Cobertura de testes
+coverage/
+.nyc_output/
+
+# Bibliotecas instrumentadas
+lib-cov/
+
+# Arquivos intermediários do Grunt
+.grunt/
+
+# Dependências do Bower
+bower_components/
+
+# Complementos binários compilados
+build/Release/
+
+# Configuração do node-waf
+.lock-wscript
+
+
+# ==========================================
+# FIREBASE DATA CONNECT
+# ==========================================
+
+.dataconnect/
+
+
+# ==========================================
+# ARQUIVOS DO SISTEMA OPERACIONAL
+# ==========================================
+
+.DS_Store
+Thumbs.db
