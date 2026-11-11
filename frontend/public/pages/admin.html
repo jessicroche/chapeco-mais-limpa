@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Painel administrativo do projeto Chapecó Mais Limpa.">
+
+    <title>Administrador - Chapecó Mais Limpa</title>
+    <link rel="icon" type="image/png" href="../img/logo_sem_nome.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="home-institucional">
+
+    <header class="topo-institucional">
+
+        <div class="logo-area">
+            <a href="../index.html">
+                <img src="../img/logo_nome.png" alt="Chapecó Mais Limpa">
+            </a>
+        </div>
+
+        <nav class="menu-navegacao">
+            <a href="../index.html">Início</a>
+            <a href="onde-descartar.html">Como descartar</a>
+            <a href="projetos-prefeitura.html">Ecopontos</a>
+            <a href="acoes.html">Ações e eventos</a>
+            <a href="projeto.html">O projeto</a>
+            <a href="admin.html" id="link-painel-admin">
+                Painel Admin
+            </a>
+        </nav>
+
+        <div class="acoes-topo">
+
+            <div class="btn-fonte-grupo" title="Ajustar tamanho do texto">
+
+                <button id="btn-diminuir-fonte"
+                    class="btn-fonte"
+                    type="button"
+                    aria-label="Diminuir texto">
+                    A-
+                </button>
+
+                <button id="btn-aumentar-fonte"
+                    class="btn-fonte"
+                    type="button"
+                    aria-label="Aumentar texto">
+                    A+
+                </button>
+
+            </div>
+
+            <button id="theme-toggle"
+                class="btn-theme"
+                type="button"
+                aria-label="Alternar modo escuro">
+                🌓 Tema
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main class="container-home">
+        <section id="area-admin">
+
+            <h2>→ Painel administrativo</h2>
+            <hr>
+            <p>Gerencie os conteúdos e as ações do portal Chapecó Mais Limpa.</p>
+
+            <section>
+                <h2>→ Gerenciar conteúdos</h2>
+                <hr>
+                
+                <p>
+                    Selecione uma página para editar, excluir ou adicionar conteúdos.
+                </p>
+
+                <select id="pagina">
+
+                    <option value="">
+                        Selecione uma página
+                    </option>
+
+                    <option value="reciclaveis-organicos">
+                        Recicláveis e Orgânicos
+                    </option>
+
+                    <option value="volumosos-eletronicos">
+                        Volumosos e Eletrônicos
+                    </option>
+
+                    <option value="toxicos">
+                        Resíduos tóxicos
+                    </option>
+
+                    <option value="entulho-jardinagem">
+                        Entulhos e Jardinagem
+                    </option>
+
+                </select>
+
+                <div id="conteudos"></div>
+            </section>
+
+
+        <section id="area-acoes">
+            <h2>→ Gerenciar ações e eventos</h2>
+            <hr>
+            <p>
+                Cadastre e gerencie as ações, eventos e compromissos
+                exibidos no calendário.</p>
+
+            <select id="opcao-agenda">
+
+                <option value="">
+                    Selecione uma opção
+                </option>
+
+                <option value="cadastrar">
+                    Cadastrar nova ação
+                </option>
+
+                <option value="gerenciar">
+                    Gerenciar ações
+                </option>
+
+            </select>
+            <div id="acoes-admin"></div>
+        </section>
+    </section>
+
+
+    <section id="acesso-negado" style="display: none;">
+        <h2>⛔ Acesso negado</h2>
+        <hr>
+        <p>Você não deveria estar aqui.</p>
+
+        <p>Esta página é exclusiva para administradores.</p>
+
+        <a href="../index.html" class="btn-secundario">
+            ← Voltar para a página inicial
+        </a>
+    </section>
+    </main>
+
+    <footer>
+        <span>🌿</span>
+        <p>&copy; 2026 - criado por Jéssica Brito</p>
+
+    </footer>
+
+    <script type="module" src="../js/app.js"></script>
+    <script type="module" src="../js/admin.js"></script>
+    <script type="module" src="../js/agenda.js"></script>
+
+</body>
+
+</html>
