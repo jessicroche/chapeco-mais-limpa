@@ -27,6 +27,7 @@ serviceAccountKey.json
 
 # Arquivos locais gerados pelo Firebase CLI
 .firebase/
+.agents/
 
 
 # ==========================================
